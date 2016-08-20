@@ -1,0 +1,100 @@
+{% load staticfiles %}
+<link href="{% static "list/table.css" %}" type="text/css" rel="stylesheet">
+<h1>{{ prog.code }}</h1>
+
+<ul>
+
+    <li>{{ prog.code }}</li>
+    
+
+</ul>
+<table class="hovertable">
+	<tr>
+		<td>Code</td>
+		<td>{{ prog.code }}</td>
+	</tr>
+	<tr>
+		<td>Institute</td>
+		<td> {{ prog.inst }}</td>
+	</tr>
+	<tr>
+		<td>GE</td>
+		<td>Opening Rank</td>
+		<td>Closing Rank</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>{{ prog.geo }}</td>
+		<td>{{ prog.gec }}</td>
+	</tr>
+	<tr>
+		<td>OBC</td>
+		<td>Opening Rank</td>
+		<td>Closing Rank</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>{{ prog.obco }}</td>
+		<td>{{ prog.obcc }}</td>
+	</tr>
+	<tr>
+		<td>SC</td>
+		<td>Opening Rank</td>
+		<td>Closing Rank</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>{{ prog.sco }}</td>
+		<td>{{ prog.scc }}</td>
+	</tr>
+	<tr>
+		<td>ST</td>
+		<td>Opening Rank</td>
+		<td>Closing Rank</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>{{ prog.sto }}</td>
+		<td>{{ prog.stc }}</td>
+	</tr>
+	<tr>
+		<td>GE(PD)</td>
+		<td>Opening Rank</td>
+		<td>Closing Rank</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>{{ prog.geopd }}</td>
+		<td>{{ prog.gecpd }}</td>
+	</tr>
+	<tr>
+		<td>OBC(PD)</td>
+		<td>Opening Rank</td>
+		<td>Closing Rank</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>{{ prog.obcopd }}</td>
+		<td>{{ prog.obccpd }}</td>
+	</tr>
+	<tr>
+		<td>SC(PD)</td>
+		<td>Opening Rank</td>
+		<td>Closing Rank</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>{{ prog.scopd }}</td>
+		<td>{{ prog.sccpd }}</td>
+	</tr>
+	<tr>
+		<td>ST(PD)</td>
+		<td>Opening Rank</td>
+		<td>Closing Rank</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>{{ prog.stopd }}</td>
+		<td>{{ prog.stcpd }}</td>
+	</tr>
+</table>

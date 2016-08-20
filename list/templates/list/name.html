@@ -1,0 +1,9 @@
+{% load staticfiles %}
+<link href="{% static "list/formstyle.css" %}" type="text/css" rel="stylesheet">
+<form class="smart-green" action="/list/login11/" method="post">
+	<h1>Login
+	<span>Please fill all the details below</span></h1>
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>

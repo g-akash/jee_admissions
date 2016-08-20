@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<link href="{% static "list/list.css" %}" type="text/css" rel="stylesheet">
+{% if prog_list %}
+	<h1>Here is a list of programmes that were available in the system in 2013</h1>
+    <ul>
+    {% for prog in prog_list %}
+        <li><a href="{% url 'detail' prog.id %}">{{ prog.code }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+<form action="/list/logout/">
+		<span>Click the button to logout</span>
+	
+
+    {% csrf_token %}
+    <input type="submit" value="Logout" />
+</form>
+<form action="/list/visual/" method="get">
+		<span>Click the button to go to visualizations</span>
+	
+
+    {% csrf_token %}
+    <input type="submit" value="See" />
+</form>

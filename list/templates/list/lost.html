@@ -1,0 +1,9 @@
+{% load staticfiles %}
+<link href="{% static "list/formstyle.css" %}" type="text/css" rel="stylesheet">
+<form class="smart-green" action="/list/lost/" method="post">
+	<h1>Reset Password
+	<span>Please fill all the fields below</span></h1>
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Reset" />
+</form>

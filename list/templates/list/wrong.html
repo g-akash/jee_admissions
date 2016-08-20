@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<link href="{% static "list/table.css" %}" type="text/css" rel="stylesheet">
+
+<form class="smart-green" action="/list/login/" method="get">
+	<h1>The password or username you have entered is wrong
+		<span>Click the button below to try again</span>
+	</h1>
+
+    {% csrf_token %}
+    <input type="submit" value="Back to login" />
+</form>
+<form class="smart-green" action="/list/lost/" method="get">
+	<h1>Have you forgotten your password?
+		<span>Click the button to reset password</span>
+	</h1>
+
+    {% csrf_token %}
+    <input type="submit" value="Reset Pasword" />
+</form>
